@@ -1,5 +1,23 @@
+:root {
+  --primary: #c0c0c0;
+  --secondary: #800000;
+  /* --tertiary: placeholder; */
+  --light: #fafafa;
+  --dark: #000;
+  --darker: #111;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +28,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.mx-1 {
+  margin: 0 var(--spacing-one);
+  
+}
+
+.mx-2 {
+  margin: 0 var(--spacing-two);
+}
+
+.my-1 {
+  margin: var(--spacing-one) 0;
+}
+
+.my-2 {
+  margin: var(--spacing-two) 0;
+}
+
+li {
+  list-style: none;
 }
