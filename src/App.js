@@ -4,6 +4,7 @@ import Header from '../src/components/Header';
 // import Project from './components/Project';
 import About from './components/About';
 import Nav from './components/Nav';
+import ContactForm from './components/Contact';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         
       </Nav>
       <main>
+        {/* Set to conditionally generated About, Contact, and Portfolio pages */}
+      <ContactForm></ContactForm>
       <About></About>
       </main>
     </div>
