@@ -13,15 +13,21 @@ function Nav() {
                 </li>
                 {/* Portfolio */}
                 <li className="mx-2">
-                    Portfolio
+                    <a data-testid='about' href='#about'>
+                        Portfolio
+                    </a>
                 </li>
                 {/* Contact Me*/}
                 <li className="mx-2">
-                    Contact
+                    <a data-testid='contact' href='#contact'>
+                        Contact Me
+                    </a>
                 </li>
                 {/* Resume */}
                 <li className="mx-2">
-                    Resume
+                    <a data-testid='resume' href='#resume'>
+                        Resume
+                    </a>
                 </li>
             </ul>
         </nav>
