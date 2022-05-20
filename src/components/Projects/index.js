@@ -10,7 +10,7 @@ function Projects()  {
     return (
         <Container>
             <Container fluid className="project-section">
-                <h1 className="projects-header">
+                <h1 className="projects-header" id="projects">
                     My Recent <strong> Projects </strong> 
                 </h1>
                 <p style={{ color: "black"}}> These are some of my recent projects</p>

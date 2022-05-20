@@ -5,20 +5,23 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
-
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header/>
       <Nav>
         
       </Nav>
       <main>
         {/* Set to conditionally generated About, Contact, and Portfolio pages */}
-      <ContactForm></ContactForm>
       <About></About>
       <Projects></Projects>
+      <Resume></Resume>
+      <ContactForm></ContactForm>
       </main>
+      <Footer/>
     </div>
   );
 }

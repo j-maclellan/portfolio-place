@@ -13,7 +13,7 @@ function Nav() {
                 </li>
                 {/* Portfolio */}
                 <li className="mx-2">
-                    <a data-testid='about' href='#about'>
+                    <a data-testid='portfolio' href='#projects'>
                         Portfolio
                     </a>
                 </li>

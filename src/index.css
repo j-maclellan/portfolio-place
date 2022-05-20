@@ -11,6 +11,12 @@
   --spacing-five: calc(2.5rem);
 }
 
+main {
+  margin: 0 auto;
+  max-width:  90%;
+  padding: 50px 30px;
+}
+
 * {
   box-sizing: border-box;
 }
