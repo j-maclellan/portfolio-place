@@ -5,18 +5,24 @@ import budget from "../../assets/projects/budget.jpg";
 import note from "../../assets/projects/note.jpg";
 import tech from "../../assets/projects/tech.jpg";
 import weather from "../../assets/projects/weather.jpg";
+import up2Bar from '../../assets/projects/up2Bar.jpg';
+import dripPlanner from '../../assets/projects/dripPlanner.jpg';
 
 function Projects()  {
     return (
-        <Container>
-            <Container fluid className="project-section">
-                <h1 className="projects-header" id="projects">
-                    My Recent <strong> Projects </strong> 
-                </h1>
-                <p style={{ color: "black"}}> These are some of my recent projects</p>
+        
+            <Container className="project-section">
+                <div className="project-heading">
+                    <h2>
+                        My Recent Projects 
+                    </h2>
+                    <p> 
+                        These are some of my recent projects
+                    </p>
+                </div>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     {/* Budget Tracking */}
-                    <Col md={4} className="project-card">
+                    <Col>
                         <ProjectCard 
                             img={budget}
                             title="Budget-Tracking"
@@ -27,7 +33,7 @@ function Projects()  {
                     </Col>
 
                     {/* Note-Saver */}
-                    <Col md={4} className="project-card">
+                    <Col>
                         <ProjectCard 
                             img={note}
                             title="Note-Saver"
@@ -36,9 +42,10 @@ function Projects()  {
                             github="https://github.com/j-maclellan/note-saver"
                         />
                     </Col>
-
+                </Row>
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     {/* Tech-Blog */}
-                    <Col md={4} className="project-card">
+                    <Col>
                         <ProjectCard 
                             img={tech}
                             title="Tech-Blog"
@@ -49,7 +56,7 @@ function Projects()  {
                     </Col>
 
                     {/* Weather Forecast  */}
-                    <Col md={4} className="project-card">
+                    <Col>
                         <ProjectCard
                             img={weather}
                             title="Weather Forecast"
@@ -58,31 +65,32 @@ function Projects()  {
                             github="https://github.com/j-maclellan/weather-forecast"
                         />
                     </Col>
-
-                    {/*
-                    <Col md={4} className="project-card">
+                </Row>
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                    {/* Up2Bar */}
+                    <Col>
                         <ProjectCard
-                            img={}
-                            title=""
-                            description=""
-                            link=""
-                            github=""
+                            img={up2Bar}
+                            title="Up2Bar"
+                            description="A group project social app to see what the local nightlife buzz is"
+                            link="https://up2bar.herokuapp.com/"
+                            github="https://github.com/wingram1/up2bar"
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col>
                         <ProjectCard
-                            img={}
-                            title=""
-                            description=""
-                            link=""
-                            github=""
+                            img={dripPlanner}
+                            title="DripPlanner"
+                            description="A group project weather app designed to help track weather forecasts for road trips"
+                            link="https://wingram1.github.io/drip-planner/"
+                            github="https://github.com/wingram1/drip-planner"
                         />
                     </Col>
-                    */}
+                    
                 </Row>    
             </Container>            
-        </Container>
+        
     )
 }
 

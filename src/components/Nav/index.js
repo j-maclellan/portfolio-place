@@ -1,36 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
+import { Gi3DGlasses } from "react-icons/gi";
 
-function Nav() {
+function Nav(props) {
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage,
+    }= props;
+
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentPage.name);
+    }, [currentPage]);
     
     return (
-        <nav>
-            <ul className="flex-row">
-                <li className="mx-2">
-                    {/* About Me section */}
-                    <a data-testid='about' href="#about">
-                        About Me
-                    </a>
-                </li>
-                {/* Portfolio */}
-                <li className="mx-2">
-                    <a data-testid='portfolio' href='#projects'>
-                        Portfolio
-                    </a>
-                </li>
-                {/* Contact Me*/}
-                <li className="mx-2">
-                    <a data-testid='contact' href='#contact'>
-                        Contact Me
-                    </a>
-                </li>
-                {/* Resume */}
-                <li className="mx-2">
-                    <a data-testid='resume' href='#resume'>
-                        Resume
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <h1>
+                <a data-testid='link' href="/">
+                   <span role='img' aria-label="glasses"> <Gi3DGlasses/> John Maclellan </span> 
+                </a>
+                
+            </h1>
+            <nav>
+                <ul className="flex-row">
+                    {pages.map((page) => (
+                        <li className={`mx-2 ${
+                            currentPage.name === page.name && 'navActive'
+                        }`} key={page.name}>
+                            <span onClick={()   => {
+                                setCurrentPage(page)
+                            }}
+                            >
+                                {capitalizeFirstLetter(page.name)}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </header>
     )
 }
 

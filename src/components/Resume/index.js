@@ -1,16 +1,16 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import resumePdf from "../../assets/Resume.pdf";
+import { Button } from "react-bootstrap";
 
 function Resume() {
     return(
         <div>
             <Container fluid className="resume-section">
-                <h1 id="resume"> Resume</h1>
-            <span>Click to Download My <a href={resumePdf} download>Resume</a></span>
+                <h2 id="resume"> Resume</h2>
                 <Row style={{ justifyContent: 'center' }}>
-                    <h1> Front End Proficiencies</h1>
-                        <ol>
+                    <h4> Front End Proficiencies</h4>
+                        <ul>
                             <li>
                                 HTML
                             </li>
@@ -32,11 +32,11 @@ function Resume() {
                             <li>
                                 Bootstrap
                             </li>
-                        </ol>
+                        </ul>
                 </Row>
                 <Row style={{ justifyContent: 'center'}}>
-                    <h1> Back End Proficiencies</h1>
-                        <ol>
+                    <h4> Back End Proficiencies</h4>
+                        <ul>
                             <li>
                                 MySQL, Sequelize
                             </li>
@@ -58,8 +58,9 @@ function Resume() {
                             <li>
                                 GraphQl
                             </li>
-                        </ol>
+                        </ul>
                 </Row>
+            <Button className='btn' href={resumePdf} download>Download My Resume</Button>
             </Container>
         </div>
     )
