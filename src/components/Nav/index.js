@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import { Gi3DGlasses } from "react-icons/gi";
 
