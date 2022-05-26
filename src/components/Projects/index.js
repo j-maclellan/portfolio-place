@@ -21,6 +21,17 @@ function Projects()  {
                         These are some of my recent projects
                     </p>
                 </div>
+                <Row style={{  justifyContent: "center", paddingBottom: "10px" }}>
+                    <Col>
+                        <ProjectCard
+                            img={flexLog}
+                            title="FlexLog"
+                            description="A group project exercise PWA for making and using custom workouts"
+                            link="https://wingram1.github.io/FlexLog/"
+                            github="https://wingram1.github.io/FlexLog/"
+                        />
+                    </Col>
+                </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     {/* Budget Tracking */}
                     <Col>
@@ -88,17 +99,6 @@ function Projects()  {
                             github="https://github.com/wingram1/drip-planner"
                         />
                     </Col>
-                    <Row style={{  justifyContent: "center", paddingBottom: "10px" }}>
-                    <Col>
-                        <ProjectCard
-                            img={flexLog}
-                            title="FlexLog"
-                            description="A group project exercise PWA for making and using custom workouts"
-                            link="https://wingram1.github.io/FlexLog/"
-                            github="https://wingram1.github.io/FlexLog/"
-                        />
-                    </Col>
-                    </Row>
                 </Row>    
             </Container>            
         
