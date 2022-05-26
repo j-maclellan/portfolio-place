@@ -7,6 +7,7 @@ import tech from "../../assets/projects/tech.jpg";
 import weather from "../../assets/projects/weather.jpg";
 import up2Bar from '../../assets/projects/up2Bar.jpg';
 import dripPlanner from '../../assets/projects/dripPlanner.jpg';
+import flexLog from '../../assets/projects/flexLog.jpg';
 
 function Projects()  {
     return (
@@ -77,7 +78,7 @@ function Projects()  {
                             github="https://github.com/wingram1/up2bar"
                         />
                     </Col>
-
+                    {/* DripPlanner*/}
                     <Col>
                         <ProjectCard
                             img={dripPlanner}
@@ -87,7 +88,17 @@ function Projects()  {
                             github="https://github.com/wingram1/drip-planner"
                         />
                     </Col>
-                    
+                    <Row style={{  justifyContent: "center", paddingBottom: "10px" }}>
+                    <Col>
+                        <ProjectCard
+                            img={flexLog}
+                            title="FlexLog"
+                            description="A group project exercise PWA for making and using custom workouts"
+                            link="https://wingram1.github.io/FlexLog/"
+                            github="https://wingram1.github.io/FlexLog/"
+                        />
+                    </Col>
+                    </Row>
                 </Row>    
             </Container>            
         
