@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import resumePdf from "../../assets/Resume.pdf";
+import resumePdf from "../../assets/Resume_John.docx.pdf";
 import { Button } from "react-bootstrap";
 
 function Resume() {
@@ -15,22 +15,28 @@ function Resume() {
                                 HTML
                             </li>
                             <li>
-                                Javascript
-                            </li>
-                            <li>
                                 CSS
                             </li>
                             <li>
-                                jQuery
-                            </li>
-                            <li>
-                                Responsive Design
+                                JavaScript
                             </li>
                             <li>
                                 React
                             </li>
                             <li>
-                                Bootstrap
+                                Responsive Design
+                            </li>
+                            <li>
+                                jQuery
+                            </li>
+                            <li>
+                                Bootstrap/Sass
+                            </li>
+                            <li>
+                                OOP
+                            </li>
+                            <li>
+                                MVC
                             </li>
                         </ul>
                 </Row>
@@ -38,25 +44,28 @@ function Resume() {
                     <h4> Back End Proficiencies</h4>
                         <ul>
                             <li>
-                                MySQL, Sequelize
+                                SQL, NoSQL
                             </li>
                             <li>
                                 APIs
                             </li>
                             <li>
-                                Node.js
+                                MongoDB
                             </li>
                             <li>
                                 Express
                             </li>
                             <li>
-                                MongoDB
-                            </li>
-                            <li>
-                                REST
+                                Node.js
                             </li>
                             <li>
                                 GraphQl
+                            </li>
+                            <li>
+                                ORM
+                            </li>
+                            <li>
+                                REST
                             </li>
                         </ul>
                 </Row>
