@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import resumePdf from "../../assets/Resume_John.docx.pdf";
+import resumePdf from "../../assets/Resume_John.pdf";
 import { Button } from "react-bootstrap";
 
 function Resume() {
