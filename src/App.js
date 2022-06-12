@@ -42,7 +42,7 @@ const [currentPage, setCurrentPage] = useState(pages[0]);
       ></Nav>
 
       <main>
-        Set to conditionally generated About, Contact, and projects pages
+        {/* Set to conditionally generated About, Contact, and projects pages */}
       {(()  => {
         switch (currentPage.name) {
           case 'about': 
