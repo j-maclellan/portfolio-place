@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Projects from './components/Projects';
 import About from './components/About';
@@ -41,7 +42,7 @@ const [currentPage, setCurrentPage] = useState(pages[0]);
       ></Nav>
 
       <main>
-        {/* Set to conditionally generated About, Contact, and projects pages */}
+        Set to conditionally generated About, Contact, and projects pages
       {(()  => {
         switch (currentPage.name) {
           case 'about': 

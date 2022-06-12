@@ -16,9 +16,9 @@ function Nav(props) {
     return (
         <header>
             <h1>
-                <a data-testid='link' href="/">
+                
                    <span role='img' aria-label="glasses"> <Gi3DGlasses/> John Maclellan </span> 
-                </a>
+                
                 
             </h1>
             <nav>
